@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 class TicTacToeProject {
     public static void main(String[] args) {
-        public static char[][] board = new char[3][3];
+        char[][] board = new char[3][3];
     }
     
     
