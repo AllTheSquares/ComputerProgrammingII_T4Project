@@ -10,7 +10,9 @@ import java.util.Scanner;
 
 class TicTacToeProject {
     public static void main(String[] args) {
-        char[][] board = new char[3][3];
+        Computer computer = new Computer();
+        System.out.println(computer.getWins());
+                
     }
     
     
