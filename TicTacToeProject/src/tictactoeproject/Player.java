@@ -6,12 +6,7 @@ public class Player {
     
     private char shape;
     private int wins;
-    
-    
-    
-    
-    
-    
+        
     Player() {
         wins = 0;
     }
@@ -24,6 +19,14 @@ public class Player {
         wins += 1;
     }
     
+    void flipCoin() {
+        boolean heads = (int)2*Math.random() == 1;
+        
+        if (heads) { 
+            
+        }
+        
+    }
 }
 
 class Computer extends Player {

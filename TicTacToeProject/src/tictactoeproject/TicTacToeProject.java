@@ -12,7 +12,10 @@ class TicTacToeProject {
     public static void main(String[] args) {
         Computer computer = new Computer();
         System.out.println(computer.getWins());
-                
+        
+        Player player1 = new Player();
+        Player player2 = new Player();
+        
     }
     
     
