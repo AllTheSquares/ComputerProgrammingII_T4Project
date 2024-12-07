@@ -20,6 +20,7 @@ import javafx.scene.text.Text;
 
 public class TicTacToeProject {
     public static void main(String[] args) {
+        char activeShape;
         
     
     }

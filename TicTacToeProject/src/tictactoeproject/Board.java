@@ -2,6 +2,7 @@
 package tictactoeproject;
 public class Board {
     private static char[][] board = new char[4][4];
+    private static int spacesLeft;
     
     /*
     
@@ -12,9 +13,10 @@ public class Board {
     */
     
     // Method to check if there is a three-in-a-row
-    public static boolean checkThreeInARow(char[][] board, Player player) {
+    public boolean checkThreeInARow(Player player) {
         
-        shape = Player.getShape();
+        char shape = Player.getShape();
+        
         
         // Check rows
         for (int i = 0; i < 4; i++) {
@@ -55,6 +57,17 @@ public class Board {
 
         return false; // No 3-in-a-row found
     }
+    
+    // clears the board at the end of the game
+    
+    public void clearBoard() {
+        board = new char[4][4];
+    }
 
+    
+    public void updateBoard(Player player,int x, int y) {
+        board[x][y] = player.getShape();
+        
+    }
 
 }

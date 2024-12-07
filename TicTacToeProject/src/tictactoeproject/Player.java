@@ -21,6 +21,14 @@ public class Player {
         wins += 1;
     }
     
+    char getShape() {
+        return shape;
+    }
+    
+    void setShape(char shape) {
+        this.shape = shape;
+    }
+    
     /*
     should call updateBoard
     create public method "setShape", takes variable shape: char
