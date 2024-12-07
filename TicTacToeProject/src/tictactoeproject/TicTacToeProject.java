@@ -8,20 +8,29 @@ package tictactoeproject;
 
 import java.util.Scanner;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontPosture;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.Text;
 
-public class TicTacToeProject {
+public class TicTacToeProject  {
     public static void main(String[] args) {
         char activeShape;
+        boolean keepPlaying = true;
         
-    
+        Player player1 = new Player(1, 'X');
+        Player player2 = new Player(2, 'O');
+        Computer computer = new Computer();
+        Board board = new Board(); 
+        board.displayBoard();
+        
+        computer.setShape('X');
+        
+        
+        while (keepPlaying) { 
+        computer.playTurn(board);
+        board.displayBoard();
+        
+        player2.playTurn(board);
+        board.displayBoard();
+        
+        }
+
     }
 }
