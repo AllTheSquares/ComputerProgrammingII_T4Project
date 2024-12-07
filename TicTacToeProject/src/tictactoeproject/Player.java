@@ -5,8 +5,10 @@ public class Player {
     private static int ties;
     
     private char shape;
+    private boolean winner;
     private int wins;
-        
+    
+    
     Player() {
         wins = 0;
     }
@@ -19,18 +21,14 @@ public class Player {
         wins += 1;
     }
     
-    void flipCoin() {
-        boolean heads = (int)2*Math.random() == 1;
-        
-        if (heads) { 
-            
-        }
-        
-    }
-}
-
-class Computer extends Player {
+    /*
+    should call updateBoard
+    create public method "setShape", takes variable shape: char
+    static function should increment ties if no win is possible;
+    create public static function getTies, retunrs ties: int
+    
+    */
+    
     
 }
-
 
